@@ -2,7 +2,7 @@
 ## Video Demo: https://youtu.be/fVvBrPHchZg?si=abXxbtZYqaISlnYT
 ## Description
 ### About
-This project generates a binary tree with a randomized structure and values. It then applies one of three traversal techniques based on user input: preorder, inorder, or postorder. The user specifies the desired tree level, the number of nodes, and the traversal technique. The tree's animation is powered by the 'rich' library for enhanced visual presentation.
+Final project for Harvard’s CS50P. This project generates a binary tree with a randomized structure and values. It then applies one of three traversal techniques based on user input: preorder, inorder, or postorder. The user specifies the desired tree level, the number of nodes, and the traversal technique. The tree's animation is powered by the 'rich' library for enhanced visual presentation.
 
 ### The Binary Tree Class
 There is a class Node, which instantiates a new node for the binary tree.
