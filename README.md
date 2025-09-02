@@ -4,6 +4,7 @@
 ### About
 Final project for Harvard’s CS50P. This project generates a binary tree with a randomized structure and values. It then applies one of three traversal techniques based on user input: preorder, inorder, or postorder. The user specifies the desired tree level, the number of nodes, and the traversal technique. The tree's animation is powered by the 'rich' library for enhanced visual presentation.
 
+---
 ### The Binary Tree Class
 There is a class Node, which instantiates a new node for the binary tree.
 Then there is a class BinaryTree, which is involved in tree generation, traversal, and printing to the terminal.
@@ -40,20 +41,21 @@ Now, using nested for loop, we iterate through every level, then we also iterate
 
 All of these logic are then divided into three smaller methods called build_tree(), build_node_values(), and build_connection_lines(), in order to make the print_tree() method more modular and understandable.
 
+---
 ### The Main Project File
 Outside the classes, there are six functions, including main().
 
-The clear_terminal() is a helper function that makes the animation of the traversal in the terminal possible, as it clears the terminal so that we can reprint the tree again cleanly.
+- The clear_terminal() is a helper function that makes the animation of the traversal in the terminal possible, as it clears the terminal so that we can reprint the tree again cleanly.
 
-The print_error() is a helper function that prints an error message to the console.
+- The print_error() is a helper function that prints an error message to the console.
 
-The prompt_user_traversal() is a function that lets the user choose between 1 to 3, to select a traversal techinque.
+- The prompt_user_traversal() is a function that lets the user choose between 1 to 3, to select a traversal techinque.
 
-The prompt_user_level() is a function that lets the user choose between 1 to 4, to select the maximum level of the binary tree.
+- The prompt_user_level() is a function that lets the user choose between 1 to 4, to select the maximum level of the binary tree.
 
-The prompt_user_nodes() is a function that lets the user choose the number of nodes in the binary tree, and the choices will be depending on the level chosen by the user.
+- The prompt_user_nodes() is a function that lets the user choose the number of nodes in the binary tree, and the choices will be depending on the level chosen by the user.
 
-Then there is main(), which integrates all of the classes and functions to finally run the binary tree traversal. It first prompts the user, then builds and prints the tree. It keeps on clearing the terminal and reprinting the binary tree with different highlighted node every second, to help in visualizing the traversal. It also keeps track of the traversed node by appending them into a list, then printing them into a terminal, so that we can use this code to run sorting using Binary Search Tree in the future.
+- Then there is main(), which integrates all of the classes and functions to finally run the binary tree traversal. It first prompts the user, then builds and prints the tree. It keeps on clearing the terminal and reprinting the binary tree with different highlighted node every second, to help in visualizing the traversal. It also keeps track of the traversed node by appending them into a list, then printing them into a terminal, so that we can use this code to run sorting using Binary Search Tree in the future.
 
 My unit test focused on the three user prompt functions, as these three are the most likely to catch a lot of errors, as we all know that relying on user input is prone to errors. And so, ensuring that we catch these accurately is very important.
 
